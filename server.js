@@ -3,13 +3,13 @@ const app = express();
 const cors = require('cors');
 require('dotenv').config();
 
-// const warehouseRoutes = require("./routes/warehouse-routes");
-// const inventoryRoutes = require("./routes/inventory-routes");
+const missionRoutes = require('./routes/mission-routes');
+const studentRoutes = require('./routes/student-routes');
 
 app.use(cors());
 app.use(express.json());
-// app.use('/warehouses', warehouseRoutes);
-// app.use('/inventories', inventoryRoutes);
+app.use('/missions', missionRoutes);
+app.use('/student', studentRoutes);
 
 const PORT = process.env.PORT || 5050;
 
