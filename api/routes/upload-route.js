@@ -4,7 +4,6 @@ const { handleUpload } = require('../helper');
 const storage = multer.memoryStorage();
 const upload = multer({ storage });
 const myUploadMiddleware = upload.single('file');
-// After i changed this from sample_file -> file, its working...?
 
 function runMiddleware(req, res, fn) {
   return new Promise((resolve, reject) => {
