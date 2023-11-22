@@ -3,7 +3,7 @@
  * @returns { Promise<void> }
  */
 exports.up = function (knex) {
-  return knex.schema.createTable('audio', (table) => {
+  return knex.schema.createTable('audios', (table) => {
     table.increments('id').primary();
     table
       .integer('missions_id')
@@ -12,8 +12,9 @@ exports.up = function (knex) {
       .references('missions.id')
       .onUpdate('CASCADE')
       .onDelete('CASCADE');
-    table.string('audio_type').notNullable();
     table.string('audio_link').notNullable();
+    table.string('audio_name').notNullable().defaultTo('default_audio_name');
+    table.string('audio_type').notNullable().defaultTo('default_audio_type');
     table.timestamp('created_at').defaultTo(knex.fn.now());
     table
       .timestamp('updated_at')
@@ -26,5 +27,5 @@ exports.up = function (knex) {
  * @returns { Promise<void> }
  */
 exports.down = function (knex) {
-  return knex.schema.dropTable('audio');
+  return knex.schema.dropTable('audios');
 };
