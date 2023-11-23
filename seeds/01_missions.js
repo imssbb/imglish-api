@@ -179,5 +179,173 @@ exports.seed = async function (knex) {
         ],
       }),
     },
+    {
+      mission_title: 'Mission 3: Pouring',
+      intro_text: `제가 자라온 밴쿠버라는 지역은 가을 겨울내내 비가 온종일 옵니다...  
+      급격히 바뀌는 계절과 날씨에 대하여 이야기할 때 사용할 수 있는 패턴으로 한주를 시작해 봅시다! `,
+      empty_dialogue: JSON.stringify({
+        Instruction: '어떻게 들리시는지 아래 적어보세요.',
+        title: "Today's Dialogue",
+        entries: [
+          {
+            speaker: 'A',
+            text: '',
+          },
+          {
+            speaker: 'B',
+            text: '',
+          },
+          {
+            speaker: 'A',
+            text: '',
+          },
+          {
+            speaker: 'B',
+            text: '',
+          },
+        ],
+      }),
+      spacing_text: 'WARNING 아래 답이 있습니다!!!',
+      main_dialogue: JSON.stringify({
+        entries: [
+          {
+            speaker: 'A',
+            text: 'Hey, What’s up put the weather today? ',
+          },
+          {
+            speaker: 'B',
+            text: ' I know. Right? It looks it’s gonna pour.',
+          },
+          {
+            speaker: 'A',
+            text: 'Yeah. I heard it was supposed to clear afternoon though. ',
+          },
+          {
+            speaker: 'B',
+            text: ` Really? That’s good to hear. I hate getting soak. `,
+          },
+        ],
+      }),
+      pattern_summary: JSON.stringify({
+        entries: [
+          {
+            pattern: `1) What's up with`,
+            text: '~가 왜그래/왜이래?',
+          },
+          {
+            pattern: '2) It looks like ... ',
+            text: '~인것 같아 ',
+          },
+          {
+            pattern: '3)  I hate ~',
+            text: '~를 싫어해 ',
+          },
+        ],
+      }),
+      practice_pattern: JSON.stringify({
+        entries: [
+          {
+            speaker: 'A',
+            text: 'Hey, What’s up put the weather today? ',
+          },
+          {
+            speaker: 'B',
+            text: ' I know. Right? It looks it’s gonna pour.',
+          },
+          {
+            speaker: 'A',
+            text: 'Yeah. I heard it was supposed to clear afternoon though. ',
+          },
+          {
+            speaker: 'B',
+            text: ` Really? That’s good to hear. I hate getting soak. `,
+          },
+        ],
+      }),
+    },
+    {
+      mission_title: 'Mission 4: You Never Know',
+      intro_text: `지난 다일로그를 이어 대화가 계속됩니다~ 
+      한국뿐만 아니라... 전 세계 일기 예보는 틀릴 때가 더 많죠?  기상청에 대한 이야기 들어보도록 하겠습니다!`,
+      empty_dialogue: JSON.stringify({
+        Instruction: '어떻게 들리시는지 아래 적어보세요.',
+        title: "Today's Dialogue",
+        entries: [
+          {
+            speaker: 'A',
+            text: '',
+          },
+          {
+            speaker: 'B',
+            text: '',
+          },
+          {
+            speaker: 'A',
+            text: '',
+          },
+          {
+            speaker: 'B',
+            text: '',
+          },
+        ],
+      }),
+      spacing_text: 'WARNING 아래 답이 있습니다!!!',
+      main_dialogue: JSON.stringify({
+        entries: [
+          {
+            speaker: 'A',
+            text: `Yup, but you never know... the weather forecast isn't the most reliable thing.`,
+          },
+          {
+            speaker: 'B',
+            text: `Yeah~ True. One time it said it was sunny when it was actually pouring like crazy outside. `,
+          },
+          {
+            speaker: 'A',
+            text: ' Exactly.. it feels like they just make stuff up. ',
+          },
+          {
+            speaker: 'B',
+            text: `Mhm, and they're not really good at it either.`,
+          },
+        ],
+      }),
+      pattern_summary: JSON.stringify({
+        entries: [
+          {
+            pattern: `1) but you never know...`,
+            text: '모르는 일이지~',
+          },
+          {
+            pattern: '2) one time ~',
+            text: '~인것 같아',
+          },
+          {
+            pattern: '3) make stuff up ',
+            text: '없는 일을 지어내는 것',
+          },
+        ],
+      }),
+      practice_pattern: JSON.stringify({
+        entries: [
+          {
+            speaker: 'A',
+            text: `Yup, but you never know... the weather forecast isn't the most reliable thing.`,
+          },
+          {
+            speaker: 'B',
+            text: `Yeah~ True. One time it said it was sunny when it was actually pouring like crazy outside. `,
+          },
+          {
+            speaker: 'A',
+            text: ' Exactly.. it feels like they just make stuff up. ',
+          },
+          {
+            speaker: 'B',
+            text: `Mhm, and they're not really good at it either.`,
+          },
+        ],
+      }),
+    },
   ]);
 };

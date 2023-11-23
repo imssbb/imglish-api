@@ -20,7 +20,7 @@ exports.up = function (knex) {
       .onDelete('CASCADE');
     table.string('feedback').notNullable();
     table.string('practice_words').notNullable();
-
+    table.string('feedback_link').nullable();
     // ** AUDIO FEEDBACK FUTURE RELEASE - Audio Files Foreign Key, teacher audio feedback **
     // table.string('audio_link').notNullable();
 

@@ -9,44 +9,45 @@ exports.seed = async function (knex) {
     {
       students_id: 1,
       mission_title: 'Mission 1: Dinner',
-      feedback: 'Great effort! Your pronunciation is improving.',
-      practice_words: 'coffee, computer, book, sky, laughter',
+      feedback:
+        'Great effort! Make sure we pay attention to the accents on words like "dinner" and "antying". Work on connecting "I was just gonna say".',
+      practice_words:
+        'Anything, Dinner, I was just gonna say that, Super, Heads ',
+      feedback_link:
+        'https://res.cloudinary.com/dnuytgnzz/video/upload/v1700703665/feedback/uliv4x3lilx770fxajwu.mp3',
       created_at: new Date(),
       updated_at: new Date(),
     },
     {
       students_id: 1,
-      mission_title: 'Mission 1: Dinner',
-
+      mission_title: 'Mission 2: Eating Out',
+      feedback:
+        'Great effort! Make sure we pay attention to the accents on words like "dinner" and "antying". Work on connecting "I was just gonna say".',
+      practice_words:
+        'Anything, Dinner, I was just gonna say that, Super, Heads ',
+      feedback_link:
+        'https://res.cloudinary.com/dnuytgnzz/video/upload/v1700703665/feedback/uliv4x3lilx770fxajwu.mp3',
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    {
+      students_id: 1,
+      mission_title: 'Mission 3: Pouring',
+      feedback:
+        'Great effort! Make sure we pay attention to the accents on words like "dinner" and "antying". Work on connecting "I was just gonna say".',
+      practice_words:
+        'Anything, Dinner, I was just gonna say that, Super, Heads ',
+      feedback_link:
+        'https://res.cloudinary.com/dnuytgnzz/video/upload/v1700703665/feedback/uliv4x3lilx770fxajwu.mp3',
+      created_at: new Date(),
+      updated_at: new Date(),
+    },
+    {
+      students_id: 1,
+      mission_title: 'Mission 4: You Never Know',
       feedback: 'Focus on clarity and pronunciation for better communication.',
       practice_words: 'house, family, travel, friend, music',
-      created_at: new Date(),
-      updated_at: new Date(),
-    },
-    {
-      students_id: 3,
-      mission_title: 'Mission 1: Dinner',
-
-      feedback: 'Well done! Your spoken English is quite clear.',
-      practice_words: 'job, hobby, movie, city, nature',
-      created_at: new Date(),
-      updated_at: new Date(),
-    },
-    {
-      students_id: 4,
-      mission_title: 'Mission 1: Dinner',
-
-      feedback: 'Improve intonation to make your speech more engaging.',
-      practice_words: 'car, school, party, beach, happiness',
-      created_at: new Date(),
-      updated_at: new Date(),
-    },
-    {
-      students_id: 5,
-      mission_title: 'Mission 1: Dinner',
-
-      feedback: 'Practice longer sentences to enhance your fluency.',
-      practice_words: 'food, journey, dream, holiday, adventure',
+      feedback_link: '',
       created_at: new Date(),
       updated_at: new Date(),
     },
