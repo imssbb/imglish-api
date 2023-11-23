@@ -1,12 +1,22 @@
 const knex = require('knex')(require('../knexfile'));
 
 // Get All Mission Information
-const index = async (_req, res) => {
+const index = async (req, res) => {
   try {
-    const data = await knex('audios');
+    const { missions_id } = req.query;
+
+    let query = knex('audios');
+
+    // If missions_id is provided, add a where condition to filter by missions_id
+    if (missions_id) {
+      query = query.where({ missions_id });
+    }
+
+    const data = await query;
+
     res.json(data);
   } catch (err) {
-    res.status(400).send(`Error retreiving Audios: ${err}`);
+    res.status(400).send(`Error retrieving Audios: ${err}`);
   }
 };
 

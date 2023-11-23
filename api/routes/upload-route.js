@@ -19,6 +19,7 @@ function runMiddleware(req, res, fn) {
 const handler = async (req, res) => {
   try {
     await runMiddleware(req, res, myUploadMiddleware);
+    // console.log('Received student_id:', req.body.student_id);
     const b64 = Buffer.from(req.file.buffer).toString('base64');
     let dataURI = 'data:' + req.file.mimetype + ';base64,' + b64;
     const cldRes = await handleUpload(dataURI);

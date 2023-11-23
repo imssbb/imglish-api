@@ -18,7 +18,9 @@ async function handleUpload(file) {
   });
 
   const audioRecord = {
+    // FUTURE: update missions_id to be dynamically adjusted according to how Today's Mission is set on Student's Main Page
     missions_id: 1,
+    student_id: 1, // Same with student_id, right now just hard coded to make it work, figure out a way to make this dynamic as with missions_id
     audio_link: cloudinaryResponse.secure_url,
   };
 

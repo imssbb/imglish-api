@@ -31,10 +31,10 @@ const findOne = async (req, res) => {
 
 // Get Inventories for a Given Warehouse
 
-// const missions = async (req, res) => {
+// const allFeedback = async (req, res) => {
 //     try {
-//       const inventories = await knex('warehouses')
-//         .join('inventories', 'inventories.warehouse_id', 'warehouses.id')
+//       const feedbacks = await knex('students')
+//         .join('feedbacks', 'inventories.warehouse_id', 'warehouses.id')
 //         .where({ warehouse_id: req.params.id });
 //       res.json(inventories);
 //     } catch (err) {

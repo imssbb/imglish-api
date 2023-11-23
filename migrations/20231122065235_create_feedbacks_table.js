@@ -12,6 +12,12 @@ exports.up = function (knex) {
       .references('students.id')
       .onUpdate('CASCADE')
       .onDelete('CASCADE');
+    table
+      .string('mission_title')
+      .notNullable()
+      .references('missions.mission_title')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE');
     table.string('feedback').notNullable();
     table.string('practice_words').notNullable();
 

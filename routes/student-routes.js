@@ -15,4 +15,5 @@ router.route('/:id').get(useController.findOne);
 // Audio Post
 // /:id/
 
+// router.route('/:id/feedbacks').get(useController.feedbacks);
 module.exports = router;
