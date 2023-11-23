@@ -21,6 +21,8 @@ exports.up = function (knex) {
     table.string('feedback').notNullable();
     table.string('practice_words').notNullable();
     table.string('feedback_link').nullable();
+    table.text('main_dialogue').notNullable();
+
     // ** AUDIO FEEDBACK FUTURE RELEASE - Audio Files Foreign Key, teacher audio feedback **
     // table.string('audio_link').notNullable();
 
