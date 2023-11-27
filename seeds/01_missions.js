@@ -9,7 +9,8 @@ exports.seed = async function (knex) {
     {
       mission_title: 'Mission 1: Dinner',
       intro_text: `오늘 저녁에는 뭘 드실 예정이신가요!? 
-      저희 삶에서 제일 어려운 질문이죠... "오늘은 뭘 먹을까?" 하하 
+      저희 삶에서 제일 어려운 질문이죠... 
+      "오늘은 뭘 먹을까?" 하하 
       오늘 다일로그에서는 과연 대화가 어떻게 흘러가는지 들어보세요 :)`,
       empty_dialogue: JSON.stringify({
         Instruction: '어떻게 들리시는지 아래 적어보세요.',
@@ -266,7 +267,8 @@ exports.seed = async function (knex) {
     {
       mission_title: 'Mission 4: You Never Know',
       intro_text: `지난 다일로그를 이어 대화가 계속됩니다~ 
-      한국뿐만 아니라... 전 세계 일기 예보는 틀릴 때가 더 많죠?  기상청에 대한 이야기 들어보도록 하겠습니다!`,
+      한국뿐만 아니라... 전 세계 일기 예보는 틀릴 때가 더 많죠?
+      기상청에 대한 이야기 들어보도록 하겠습니다!`,
       empty_dialogue: JSON.stringify({
         Instruction: '어떻게 들리시는지 아래 적어보세요.',
         title: "Today's Dialogue",
