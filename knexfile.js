@@ -11,7 +11,7 @@ module.exports = {
     host: process.env.DB_HOST,
     user: process.env.DB_LOCAL_USER,
     password: process.env.DB_LOCAL_PASSWORD,
-    database: 'missions',
+    database: process.env.DB_NAME,
     charset: 'utf8',
   },
 };

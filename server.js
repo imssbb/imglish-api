@@ -21,7 +21,6 @@ app.use('/api', uploaderRoute);
 
 const PORT = process.env.PORT || 5050;
 
-// basic home route
 app.get('/', (req, res) => {
   res.send('Welcome to Imglish API');
 });
